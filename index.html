@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<title>Site Visit List - New Item</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="body">
+		<h2>(Proposed) Site Visit List</h2>
+	
+	
+		<p>Date: <input type="date" name="dos"> </p>
+		<p>Specialty: <select id="specialty"> <!--remove duplicate or excess options; add CASA option-->
+			<option value="">Select:</option>
+			<option value="Allergy">Allergy</option>
+			<option value="Audiology">Audiology</option>
+			<option value="BehHealth">Behavioral Health</option>
+			<option value="Breast">Breast Disease</option>
+			<option value="CASA">CASA</option>
+			<option value="CVT">Cardiovascular/Thoracic Surgery</option>
+			<option value="Cardiology">Cardiology</option>
+			<option value="IntCard">Interventional Cardiology</option>
+			<option value="Derm">Dermatology</option>
+			<option value="Ent">Ear, Nose, Throat</option>
+			<option value="Endocrinology">Endocrinology</option>
+			<option value="Family Medicine">Family Medicine</option>
+			<option value="Gastro">Gastroenterology</option>
+			<option value="GenSurg">General Surgery</option>
+			<option value="ObGyn">Gynecology/Obstetrics</option>
+			<option value="HemOnc">Hematology/Oncology</option>
+			<option value="IntMed">Internal Medicine</option>
+			<option value="Neurology">Neurology</option>
+			<option value="Ophthalmology">Ophthalmology</option>
+			<option value="Orthopedics">Orthopedics</option>
+			<option value="Peds">Pediatrics</option>
+			<option value="Rehab">Rehab</option>
+			<option value="UC">Urgent Care</option>
+			<option value="Uro">Urology</option>
+		</select></p>
+		
+		<p>Location:<select id="location"> <!--Location selector. -->
+			<option value="">Select:</option>
+			<option value="CASA">CASA</option>	
+			<option value="placeholder">Location DropDown Here</option>
+			</select></p>
+		
+		<p><i>Customer Name Picker Goes Here</i></p> <!--beyond my abilities right now. -->
+		
+
+		<p><b>Position:</b></p> <!--Position selector. Radio buttons, smaller selection. Added CASA. -->
+		<input type="radio" id="phys" name="phys"><label for="phys">Physician</label>
+		<input type="radio" id="midlev" name="midlev"><label for="midlev">Midlevel (PA, APRN)</label>
+		<input type="radio" id="nurse" name="nurse"><label for="nurse">RN/LPN</label>
+		<input type="radio" id="ma" name="ma"><label for="ma">Medical Assistant</label>	
+		<input type="radio" id="sm" name="sm"><label for="sm">Site Manager</label>
+		<input type="radio" id="front" name="front"><label for="front">Front Office Staff</label>
+		<input type="radio" id="therapist" name="therapist"><label for="therapist">PT/OT/ST</label><br>
+		<input type="radio" id="pracadmin" name="pracadmin"><label for="pracadmin">Practice Administrator</label>
+		<input type="radio" id="bhther" name="bhther"><label for="bhther">BH Therapist</label>
+		<input type="radio" id="bhadmin" name="bhadmin"><label for="bhadmin">BH Administrator</label>
+		<input type="radio" id="casa"  name="casa"><label for="casa">CASA</label>
+		
+	
+		<p><b>Application:</b></p> <!--application selector-->
+		<input type="checkbox" id="pwrchrt" name="pwrchrt"><label for="pwrchrt">PowerChart</label>
+		<input type="checkbox" id="pct" name="pct"><label for="pct">PowerChart Touch</label>
+		<input type="checkbox" id="drgn" name="drgn"><label for="drgn">Dragon</label>
+		<input type="checkbox" id="dyndoc" name="dyndoc"><label for="dyndoc">DynDoc</label>
+		<input type="checkbox" id="efrsce" name="efrsce"><label for="efrsce">eFORCSE</label>
+		<input type="checkbox" id="epcs" name="epcs"><label for="epcs">EPCS</label>
+		<input type="checkbox" id="erx" name="erx"><label for="erx">ePrescribe</label>
+		<input type="checkbox" id="ge" name="ge"><label for="ge">GE</label>
+		<input type="checkbox" id="hdwr" name="hdwr"><label for="hdwr">Hardware</label><br>
+		<input type="checkbox" id="her" name="her"><label for="her">HM/HealtheRegistries</label>
+		<input type="checkbox" id="impr" name="impr"><label for="impr">Imprivata</label>
+		<input type="checkbox" id="inet" name="inet"><label for="inet">IntrAnet</label>
+		<input type="checkbox" id="msgctr" name="msgctr"><label for="msgctr">Message Center</label>
+		<input type="checkbox" id="muse" name="muse"><label for="muse">Muse ECG Editor</label>
+		<input type="checkbox" id="pharmnet" name="pharmnet"><label for="pharmnet">PharmNet</label>
+		<input type="checkbox" id="phr" name="phr"><label for="phr">Phreesia</label><br>
+		<input type="checkbox" id="ms" name="ms"><label for="ms">Microsoft Applications (Office, Outlook)</label>
+		<input type="checkbox" id="win" name="win"><label for="win">Windows</label>
+		<input type="checkbox" id="skype" name="skype"><label for="skype">Skype</label>
+		<input type="checkbox" id="other" name="other"><label for="other">Other</label>
+		<input type="text" id="othspec" name="othspec" width="20" placeholder="Please Specify:">
+
+		<p><b>Problem:</b></p> <!--problem selector. Trimmed, added CASA assist for tracking of helping one another?-->
+		<input type="checkbox" id="access" name="access"><label for="access">Needs Access</label>
+		<input type="checkbox" id="custom" name="custom"><label for="customization">Customization</label>
+		<input type="checkbox" id="phdwr" name="phdwr"><label for="phdwr">Hardware Malfunction</label>
+		<input type="checkbox" id="docs" name="docs"><label for="docs">Documentation</label>
+		<input type="checkbox" id="down" name="down"><label for="down">Downtime</label>
+		<input type="checkbox" id="func" name="func"><label for="func">Functionality</label><br>
+		<input type="checkbox" id="medrec" name="medrec"><label for="medrec">Medication Reconciliation</label>
+		<input type="checkbox" id="casst" name="casst"><label for="casst">CASA Assist</label>
+		<input type="checkbox" id="prnt" name="prnt"><label for="prnt">Printer (setup, back end print)</label>
+		<input type="checkbox" id="prntdev" name="prntdev"><label for="prntdev">Printer (Device issue)</label>
+		<input type="checkbox" id="reslab" name="reslab"><label for="reslab">Laboratory Results</label><br>
+		<input type="checkbox" id="imgres" name="imgres"><label for="imgres">Imaging Results</label>
+		<input type="checkbox" id="orders" name="orders"><label for="orders">Order Entry</label>
+		<input type="checkbox" id="pfrm" name="pfrm"><label for="pfrm">PowerForm</label>
+		<input type="checkbox" id="ppln" name="ppln"><label for="ppln">PowerPlans</label>
+		<input type="checkbox" id="wkflo" name="wkflo"><label for="wkflo">Workflow</label>
+		<input type="checkbox" id="othrprob" name="othrprob"><label for="othrprob">Other Problem:</label>
+		<input type="text" id="othrprobtxt" name="othrprobtxt" width="20" placeholder="Other Problem...">
+
+		<p><b>Resolution:</b></p> <!--resolution selector-->
+		<input type="checkbox" id="solved" name="solved"><label for="solved">Resolved by CASA</label>
+		<input type="checkbox" id="ed" name="ed"><label for="ed">Education</label>
+		<input type="checkbox" id="enh" name="enh"><label for="enh">Enhancement</label>
+		<input type="checkbox" id="tix" name="tix"><label for="tix">Entered Ticket</label>
+		<input type="text" id="tik" name="tik" maxlength="10" placeholder="Ticket #">
+		
+		
+		<p><b>Description of encounter / details:</b></p> <!--free text area-->
+		<textarea id="details" name="details" rows="10" cols="30" placeholder="Please enter details..."></textarea>
+		
+	</div>	
+</body>
+
+</html>

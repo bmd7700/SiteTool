@@ -1,0 +1,13 @@
+/*stylesheet for site visit list*/
+
+.body{
+	font-family: Helvetica;
+	margin: 10px;
+	padding: 5px;
+}
+.body h2{
+	color: #01209b;	
+}
+.body input, .body label{
+	padding: 10px;
+}
